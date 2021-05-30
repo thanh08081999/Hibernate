@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+ 
+<hibernate-configuration>
+    <session-factory>
+        <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
+        
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/PHibernate?serverTimezone=UTC&amp;useUnicode=true&amp;characterEncoding=utf8</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">0589548598</property>
+         
+        <property name="show_sql">true</property>
+         
+        <!--Mapping-->
+        <mapping resource="TaiKhoan.hbm.xml"/>
+        <mapping resource="SinhVien.hbm.xml"/>
+        <mapping resource="PhongHoc.hbm.xml"/>
+        <mapping resource="NgayTrongTuan.hbm.xml"/>
+        <mapping resource="MonHoc.hbm.xml"/>
+        <mapping resource="LopHoc.hbm.xml"/>
+        <mapping resource="HocPhan.hbm.xml"/>
+        <mapping resource="GiaoVien.hbm.xml"/>
+        <mapping resource="DSSVDKHP.hbm.xml"/>
+        <mapping resource="DSKiDKHP.hbm.xml"/>
+        <mapping resource="DSHocKi.hbm.xml"/>
+        <mapping resource="CaHoc.hbm.xml"/>
+    </session-factory>
+</hibernate-configuration>
